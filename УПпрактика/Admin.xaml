@@ -1,0 +1,19 @@
+﻿<Window x:Class="УПпрактика.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:УПпрактика"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="745,10,0,0" VerticalAlignment="Top" Height="22" Width="45" Click="Back_click"/>
+        <Image x:Name="Logo" Source="/logo.jpg" Margin="-33,10,726,10"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,29,0,0" TextWrapping="Wrap" Text="NBA Management System" VerticalAlignment="Top" Height="26" Width="157"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="20" Margin="335,21,0,0" TextWrapping="Wrap" Text="Admin Login" VerticalAlignment="Top" Height="34" Width="117"/>
+    </Grid>
+</Window>

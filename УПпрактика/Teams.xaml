@@ -1,0 +1,223 @@
+﻿<Window x:Class="УПпрактика.Teams"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:УПпрактика"
+        mc:Ignorable="d"
+        Title="Teams" Height="450" Width="800">
+    <Grid Margin="0,0,10,0">
+        <Image HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="27" Source="/logo.jpg"/>
+        <Label Grid.Row="0" FontSize="20" Content="NBA Manager System" Margin="39,20,561,374"/>
+        <Label Grid.Row="0" FontSize="30" Height="60" Width="200" Content="Teams Main" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <Button x:Name="Back" Content="Back" Grid.Row="0" Margin="685,10,10,377" Click="Back_Click" />
+        <TabControl Margin="10,65,-7,0">
+            <TabItem Header="Eastern">
+                <Grid Background="White" Margin="10,0,7,30">
+                    <Image Source="/3.jpg" Height="40" Margin="495,39,204,232"/>
+                    <Image Source="/5.jpg" Height="40" Margin="498,91,205,180" />
+                    <Image Source="/1.jpg" Height="40" Margin="497,142,204,129"/>
+                    <Image Source="/2.jpg" Height="40" Margin="498,191,203,80"/>
+                    <Image Source="/4.jpg" Height="40" Margin="499,242,200,29" />
+                    <Image Source="/9.jpg" Height="40" Margin="252,37,446,234" />
+                    <Image Source="/8.jpg" Height="40" Margin="251,92,447,179"/>
+                    <Image Source="/6.jpg" Height="40" Margin="252,140,446,131" />
+                    <Image Source="/7.jpg" Height="40" Margin="252,191,446,80" />
+                    <Image Source="/10.jpg" Height="40" Margin="252,242,446,29" />
+                    <Image Source="/11.jpg" Margin="1,40,701,233" />
+                    <Image Source="/14.jpg" Height="40" Margin="0,91,700,180" />
+                    <Image Source="/13.jpg" Margin="-2,141,701,129" />
+                    <Image Source="/12.jpg" Margin="-5,193,702,77"/>
+                    <Image Source="/15.jpg" Margin="-3,243,707,29"/>
+
+                    <Label Content="Athlantic" Margin="0,0,514,284" Background="#FFE5E5E5" HorizontalContentAlignment="Center"/>
+                    <Label Content="Central" Margin="255,0,273,284" Background="#FFE5E5E5" HorizontalContentAlignment="Center"/>
+                    <Label Content="Southeast" Margin="496,0,10,279" Background="#FFE5E5E5" HorizontalContentAlignment="Center"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="0,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="0,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="0,137,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="0,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="0,239,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="252,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="239"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="252,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="239"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Top" Width="239" Margin="252,137,0,0"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="252,189,0,0" Stroke="Black" VerticalAlignment="Top" Width="239"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="252,239,0,0" Stroke="Black" VerticalAlignment="Top" Width="239"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="496,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="496,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="496,137,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="496,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="496,239,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
+
+                    <Label Content="Boston Celtics" Margin="59,37,584,249"/>
+                    <Label Content="Brooklyn Nets" Margin="59,83,594,203"/>
+                    <Label Content="New York Knicks" Margin="59,133,594,153"/>
+                    <Label Content="Philadelphia 76ers" Margin="59,182,563,104"/>
+                    <Label Content="Toronto Raptors" Margin="59,234,577,52"/>
+                    <Label Content="Chicago Bulls" Margin="317,36,331,250"/>
+                    <Label Content="Cleveland Cavaliers" Margin="317,87,309,199"/>
+                    <Label Content="Detroit Pistons" Margin="317,136,331,150"/>
+                    <Label Content="Indiana Pacers" Margin="317,184,315,102"/>
+                    <Label Content="Milwaukee Bucks" Margin="317,237,323,49"/>
+                    <Label Content="Atlanta Hawks" Margin="570,32,113,254"/>
+                    <Label Content="Charlotte Hornets" Margin="571,88,93,198"/>
+                    <Label Content="Miami Heat" Margin="573,139,128,147"/>
+                    <Label Content="Orlando Magic" Margin="573,186,78,99"/>
+                    <Label Content="Washington Wizards&#xD;&#xA;" Margin="570,237,95,49"/>
+                    <Button Content="Roster" Margin="63,59,646,232" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" Click="Button_Click" />
+                    <Button Content="Matchup" Margin="113,61,594,230" Background="{x:Null}" Click="ButtonRosterClick"  Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="173,61,511,230" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" Click="Button_Click_1" />
+                    <Button Content="Roster" Margin="68,108,653,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="113,108,596,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="178,108,519,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="69,154,655,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="113,154,596,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="178,154,520,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="66,204,655,87" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="112,205,598,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="178,205,521,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="67,255,656,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="113,255,599,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="179,255,520,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="323,58,398,233" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="365,58,341,233" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="418,59,272,232" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="322,108,398,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="367,108,345,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="423,108,276,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="324,160,402,131" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="367,160,345,131" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="423,161,276,130" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="323,213,402,78" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="365,214,346,77" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="423,214,276,77" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="322,255,402,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="367,255,346,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="424,255,276,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="574,59,159,232" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="623,59,82,232" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="687,59,11,232" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="574,113,159,178" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="624,113,81,178" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="688,113,11,178" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="576,162,158,129" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="623,162,81,129" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="689,160,11,131" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="573,209,147,82" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="622,210,81,81" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="688,209,11,82" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="574,263,146,28" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="623,265,81,26" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="688,265,11,26" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Western">
+                <Grid Background="White" Margin="10,0,7,30">
+                    <Label Content="Northwest" Margin="10,0,508,284" Background="#FFE5E5E5" HorizontalContentAlignment="Center"/>
+                    <Label Content="Pacific" Margin="267,0,265,284" Background="#FFE5E5E5" HorizontalContentAlignment="Center"/>
+                    <Label Content="Southweast" Margin="504,0,10,284" Background="#FFE5E5E5" HorizontalContentAlignment="Center"/>
+                    <Button Height="40" Width="40" Margin="543,38,197,236" BorderBrush="{x:Null}" Background="{x:Null}">
+                        <Image Source="/18.jpg" Height="40" Width="60"/>
+                    </Button>
+                    <Button Height="40" Width="40" Margin="543,91,197,183" BorderBrush="{x:Null}" Background="{x:Null}">
+                        <Image Source="/7.jpg" Height="40" Width="66" />
+                    </Button>
+
+                    <Image Source="/17.jpg" Height="40" Margin="506,139,216,132"/>
+                    <Image Source="/8.jpg" Height="40" Margin="507,188,212,83"/>
+                    <Image Source="/16.jpg" Height="40" Margin="507,237,212,34"/>
+                    <Image Source="/3.jpg" Height="40" Margin="12,38,709,233" />
+                    <Image Source="/2.jpg" Height="40" Margin="12,88,709,183" />
+                    <Image Source="/6.jpg" Height="40" Margin="13,137,708,134" />
+                    <Image Source="/4.jpg" Height="40" Margin="13,187,708,84"/>
+                    <Image Source="/7.jpg" Height="40" Margin="12,241,707,30"/>
+                    <Image Source="/15.jpg" Height="40" Margin="267,38,452,233" />
+                    <Image Source="/11.jpg" Height="40" Margin="269,88,452,183"/>
+                    <Image Source="/12.jpg" Height="40" Margin="268,139,451,132" />
+                    <Image Source="/10.jpg" Height="40" Margin="268,187,451,84"/>
+                    <Image Source="/9.jpg" Height="40" Margin="268,238,453,33"/>
+
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="10,33,0,0" Stroke="Black" VerticalAlignment="Top" Width="246"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="10,84,0,0" Stroke="Black" VerticalAlignment="Top" Width="246"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="10,135,0,0" Stroke="Black" VerticalAlignment="Top" Width="246"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="10,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="246"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="10,238,0,0" Stroke="Black" VerticalAlignment="Top" Width="246"/>
+                    <Rectangle HorizontalAlignment="Center" Height="50" Margin="0,33,0,0" Stroke="Black" VerticalAlignment="Top" Width="234"/>
+                    <Rectangle HorizontalAlignment="Center" Height="50" Margin="0,84,0,0" Stroke="Black" VerticalAlignment="Top" Width="234"/>
+                    <Rectangle HorizontalAlignment="Center" Height="50" Stroke="Black" VerticalAlignment="Top" Width="234" Margin="0,135,0,0"/>
+                    <Rectangle HorizontalAlignment="Center" Height="50" Margin="0,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="234"/>
+                    <Rectangle HorizontalAlignment="Center" Height="50" Margin="0,238,0,0" Stroke="Black" VerticalAlignment="Top" Width="234"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="504,32,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="504,84,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="504,135,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="504,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="504,238,0,0" Stroke="Black" VerticalAlignment="Top" Width="251"/>
+
+                    <Label Content="Denver Nuggets" Margin="63,37,619,249"/>
+                    <Label Content="Minnesota Timberwolves" Margin="63,85,566,201"/>
+                    <Label Content="Oklahoma City Thunder" Margin="65,133,579,153"/>
+                    <Label Content="Portland Trail Blazers" Margin="65,184,582,102"/>
+                    <Label Content="Utah Jazz" Margin="68,234,637,52"/>
+                    <Label Content="Golden State Warriors" Margin="317,34,334,252"/>
+                    <Label Content="L.A. Lakers" Margin="320,85,385,201"/>
+                    <Label Content="Los Angeles Clippers" Margin="322,133,332,153"/>
+                    <Label Content="Phoenix Suns" Margin="320,184,378,102"/>
+                    <Label Content="Sacramento Kings" Margin="320,234,346,52"/>
+                    <Label Content="Dallas Mavericks" Margin="588,34,90,252"/>
+                    <Label Content="Houston Rockets" Margin="588,83,90,203"/>
+                    <Label Content="Memphis Grizzlies" Margin="590,132,83,154"/>
+                    <Label Content="New Orleans Pelicans" Margin="595,184,60,102"/>
+                    <Label Content="San Antonio Spurs" Margin="595,234,78,52"/>
+                    <Button Content="Roster" Margin="71,62,662,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="120,62,597,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="185,62,527,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="71,108,662,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="120,108,597,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="185,108,527,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="71,154,662,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="120,154,597,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="185,154,527,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="71,205,662,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="120,205,597,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="185,205,527,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="71,255,662,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="120,255,597,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="185,255,527,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="322,62,411,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="371,62,346,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="436,62,276,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="322,108,411,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="371,108,346,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="436,108,276,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="322,154,411,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="371,154,346,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="436,154,276,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="322,205,411,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="371,205,346,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="436,205,276,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="322,255,411,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="371,255,346,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="436,255,276,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="588,62,145,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="637,62,80,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="702,62,10,229" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="588,108,145,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="637,108,80,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="702,108,10,183" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="588,154,145,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="637,154,80,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="702,154,10,137" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="588,205,145,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="637,205,80,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="702,205,10,86" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Roster" Margin="588,255,145,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="Matchup" Margin="637,255,80,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                    <Button Content="First Lineup" Margin="702,255,10,36" Background="{x:Null}" Foreground="#FF00B3FF" BorderBrush="{x:Null}" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FF4A4AF9" x:Name="Info" Height="8" Margin="0,429,0,0" Width="804" />
+
+    </Grid>
+</Window>
